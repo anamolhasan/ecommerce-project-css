@@ -27,7 +27,20 @@ img{
     justify-content: space-around;
     align-items: center;
 }
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
 /* navbar starts here */
+#menu-icone{
+    display: none;
+}
 nav{
     font-family: cursive;
     font-size: 1.2rem;
@@ -68,4 +81,54 @@ nav{
 .profile-icon:hover{
     filter: saturate(1);
 }
+.nav-lower{
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+    font-weight: bolder;
+}
+.nav-brand{
+    font-size: 2rem;
+}
 /* navbar ends here */
+
+/* footer starts here */
+.footer{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+    margin-left: -5px;
+}
+.footer_input{
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+}
+/* footer ends here */
+
+/* responsiv  */
+@media screen and (min-width:768px)and (max-width:992px){
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    #menu-icone{
+       display: block;
+       text-align: center;
+       margin: 1rem 0;
+       cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px){
+    
+}
+@media screen and (max-width:600px){
+    
+}
